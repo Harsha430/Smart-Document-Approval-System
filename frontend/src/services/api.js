@@ -2,7 +2,15 @@ import axios from 'axios'
 import { useAuthStore } from '../stores/authStore'
 import toast from 'react-hot-toast'
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080/api'
+let API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080/api'
+
+// Ensure API_BASE_URL ends with /api and doesn't have trailing slash
+if (API_BASE_URL) {
+  API_BASE_URL = API_BASE_URL.replace(/\/$/, '') // Remove trailing slash if any
+  if (!API_BASE_URL.endsWith('/api') && !API_BASE_URL.includes('localhost')) {
+    API_BASE_URL = `${API_BASE_URL}/api`
+  }
+}
 
 // Create axios instance
 const api = axios.create({
