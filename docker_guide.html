@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dockerization Guide: Document Approval System</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 2rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+        h3 {
+            color: #16a085;
+            margin-top: 1.5rem;
+        }
+        code {
+            background-color: #e8e8e8;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+            color: #c7254e;
+        }
+        pre {
+            background-color: #2d3436;
+            color: #dfe6e9;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            position: relative;
+            font-size: 0.95rem;
+        }
+        .step {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .sub-step {
+            margin-left: 1rem;
+            margin-bottom: 1.5rem;
+            border-left: 3px solid #3498db;
+            padding-left: 1rem;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .file-name {
+            font-weight: bold;
+            color: #d35400;
+            margin-bottom: 0.5rem;
+            display: block;
+            font-family: monospace;
+        }
+        .explanation {
+            font-size: 0.95em;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Dockerization Guide: Document Approval System</h1>
+    <p>Welcome! This guide will take you through the levels of dockerizing your React + Spring Boot application. We will start from scratch and build up to a full Docker Compose setup.</p>
+
+    <div class="step">
+        <h2>Level 1: Initial Setup (Pre-Docker)</h2>
+        <p>Before we containerize, let's understand what we are running. You currently have:</p>
+        <ul>
+            <li><strong>Backend:</strong> Spring Boot (Java 17+)</li>
+            <li><strong>Frontend:</strong> React (Vite)</li>
+            <li><strong>Database:</strong> PostgreSQL</li>
+        </ul>
+        <p>Ensure you have <strong>Docker Desktop</strong> installed and running.</p>
+    </div>
+
+    <div class="step">
+        <h2>Level 2: The Backend Dockerfile</h2>
+        <p>We need to create a blueprint for our backend container. We'll use a "Multi-Stage Build" to keep the image small.</p>
+        
+        <p><strong>Action:</strong> Create a file named <code>Dockerfile</code> in the <strong>root directory</strong> of your project (where <code>pom.xml</code> is).</p>
+
+        <span class="file-name">File: Dockerfile</span>
+        <pre>
+# Stage 1: Build the application
+FROM maven:3.8.5-openjdk-17 AS build
+WORKDIR /app
+COPY pom.xml .
+COPY src ./src
+# Build the jar, skipping tests to save time during guide
+RUN mvn clean package -DskipTests
+
+# Stage 2: Run the application
+FROM eclipse-temurin:17-jdk-alpine
+WORKDIR /app
+# Copy the built jar from the previous stage
+COPY --from=build /app/target/*.jar app.jar
+
+# Expose the port Spring Boot runs on
+EXPOSE 8080
+
+# Command to run the application
+ENTRYPOINT ["java", "-jar", "app.jar"]
+</pre>
+    </div>
+
+    <div class="step">
+        <h2>Level 3: The Frontend Dockerfile</h2>
+        <p>Now for the React frontend. We will build the static files and serve them using Nginx, a high-performance web server.</p>
+        
+        <p><strong>Action:</strong> Create a file named <code>Dockerfile</code> in the <strong>frontend directory</strong> (<code>frontend/Dockerfile</code>).</p>
+
+        <span class="file-name">File: frontend/Dockerfile</span>
+        <pre>
+# Stage 1: Build the React app
+FROM node:18-alpine AS build
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+RUN npm run build
+
+# Stage 2: Serve with Nginx
+FROM nginx:alpine
+# Copy the build output to Nginx's html directory
+COPY --from=build /app/dist /usr/share/nginx/html
+# Expose port 80 (standard web port)
+EXPOSE 80
+# Start Nginx
+CMD ["nginx", "-g", "daemon off;"]
+</pre>
+    </div>
+
+    <div class="step">
+        <h2>Level 4: Volumes & Networking (The Concepts)</h2>
+        <p><strong>Volumes:</strong> Containers are ephemeral (temporary). If you delete a container, its data is gone. We use <em>Volumes</em> to save data (like your database and uploaded files) on your host machine so it survives restarts.</p>
+        <p><strong>Networking:</strong> By default, containers are isolated. We need a <em>Network</em> so the Backend can talk to the Database, and the Frontend can talk to the Backend.</p>
+        <p>We will implement both of these in the next step using Docker Compose.</p>
+    </div>
+
+    <div class="step">
+        <h2>Level 5: Docker Compose (Step-by-Step)</h2>
+        <p>Docker Compose allows us to define all our services, networks, and volumes in a single file. We will build this file piece by piece so you understand exactly what is happening.</p>
+
+        <p><strong>Action:</strong> Create a file named <code>docker-compose.yml</code> in the <strong>root directory</strong>.</p>
+
+        <div class="sub-step">
+            <h3>Step 5.1: The Skeleton</h3>
+            <p class="explanation">First, we define the version and create the main blocks.</p>
+            <pre>
+version: '3.8'
+
+services:
+  # We will add our services here...
+
+volumes:
+  # We will add volumes here...
+
+networks:
+  # We will add networks here...
+</pre>
+        </div>
+
+        <div class="sub-step">
+            <h3>Step 5.2: The Database Service</h3>
+            <p class="explanation">We add the PostgreSQL database. We set the username, password, and database name using environment variables. We also mount a volume so data persists.</p>
+            <pre>
+services:
+  db:
+    image: postgres:15
+    container_name: approval_db
+    environment:
+      POSTGRES_DB: document_approval_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 00000
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - app-network
+</pre>
+        </div>
+
+        <div class="sub-step">
+            <h3>Step 5.3: The Backend Service</h3>
+            <p class="explanation">This builds the Dockerfile in the current directory (<code>.</code>). Crucially, we override the <code>SPRING_DATASOURCE_URL</code> to point to the <code>db</code> service we just defined (instead of localhost).</p>
+            <pre>
+  backend:
+    build: .
+    container_name: approval_backend
+    depends_on:
+      - db
+    environment:
+      # 'db' here refers to the service name defined above
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/document_approval_db
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 00000
+    volumes:
+      # Map the uploads directory to the host so files aren't lost
+      - ./uploads:/app/uploads
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+</pre>
+        </div>
+
+        <div class="sub-step">
+            <h3>Step 5.4: The Frontend Service</h3>
+            <p class="explanation">This builds the Dockerfile in the <code>./frontend</code> directory. It maps port 3000 on your machine to port 80 inside the container (where Nginx is listening).</p>
+            <pre>
+  frontend:
+    build: ./frontend
+    container_name: approval_frontend
+    depends_on:
+      - backend
+    ports:
+      - "3000:80"
+    networks:
+      - app-network
+</pre>
+        </div>
+
+        <div class="sub-step">
+            <h3>Step 5.5: Volumes & Networks</h3>
+            <p class="explanation">Finally, at the bottom of the file, we explicitly define the volume and network we referenced above.</p>
+            <pre>
+volumes:
+  db_data:
+
+networks:
+  app-network:
+    driver: bridge
+</pre>
+        </div>
+
+        <div class="sub-step">
+            <h3>The Complete File</h3>
+            <p>Here is the full <code>docker-compose.yml</code> file for you to copy:</p>
+            <pre>
+version: '3.8'
+
+services:
+  # 1. Database Service
+  db:
+    image: postgres:15
+    container_name: approval_db
+    environment:
+      POSTGRES_DB: document_approval_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 00000
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - app-network
+
+  # 2. Backend Service
+  backend:
+    build: .
+    container_name: approval_backend
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/document_approval_db
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 00000
+    volumes:
+      - ./uploads:/app/uploads
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+
+  # 3. Frontend Service
+  frontend:
+    build: ./frontend
+    container_name: approval_frontend
+    depends_on:
+      - backend
+    ports:
+      - "3000:80"
+    networks:
+      - app-network
+
+volumes:
+  db_data:
+
+networks:
+  app-network:
+    driver: bridge
+</pre>
+        </div>
+    </div>
+
+    <div class="step">
+        <h2>Level 6: Launch!</h2>
+        <p>Now that everything is set up, open your terminal in the root directory and run:</p>
+        <pre>docker-compose up --build</pre>
+        
+        <p><strong>What to expect:</strong></p>
+        <ol>
+            <li>Docker will download the images (Postgres, Java, Node, Nginx).</li>
+            <li>It will build your Spring Boot app.</li>
+            <li>It will build your React app.</li>
+            <li>It will start the Database, then the Backend, then the Frontend.</li>
+        </ol>
+
+        <div class="note">
+            <strong>Access your app:</strong><br>
+            Frontend: <a href="http://localhost:3000" target="_blank">http://localhost:3000</a><br>
+            Backend API: <a href="http://localhost:8080/api" target="_blank">http://localhost:8080/api</a>
+        </div>
+        
+        <p>To stop everything, press <code>Ctrl+C</code> or run <code>docker-compose down</code>.</p>
+    </div>
+
+</body>
+</html>

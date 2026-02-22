@@ -1,0 +1,171 @@
+{
+  "app": {
+    "name": "DocApproval",
+    "tagline": "Smart Document System"
+  },
+  "actions": {
+    "logout": "Logout",
+    "signout": "Sign out",
+    "upload": "Upload",
+    "searchPlaceholder": "Search documents...",
+    "approve": "Approve",
+    "reject": "Reject"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "myDocuments": "My Documents",
+    "uploadDocument": "Upload Document",
+    "workflows": "Workflows",
+    "users": "Users",
+    "auditLogs": "Audit Logs",
+    "profile": "Profile",
+    "profileSettings": "Profile Settings"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password"
+  },
+  "toast": {
+    "loggedOut": "Logged out successfully"
+  },
+  "lang": {
+    "english": "English",
+    "russian": "Russian"
+  },
+  "common": {
+    "viewAll": "View All",
+    "unknownDate": "Unknown date",
+    "unknown": "Unknown",
+    "total": "Total",
+    "cancel": "Cancel",
+    "comingSoon": "Functionality coming soon...",
+    "adjustSearch": "Try adjusting your search or filter criteria",
+    "moreOptions": "More Options",
+    "actions": "Actions",
+    "delete": "Delete",
+    "status": "Status"
+  },
+  "dashboard": {
+    "totalDocuments": "Total Documents",
+    "pendingReview": "Pending Review",
+    "approved": "Approved",
+    "rejected": "Rejected",
+    "pendingReviews": "Pending Reviews",
+    "welcomeBack": "Welcome back",
+    "subtitle": "Here's what's happening with your documents today.",
+    "recentActivity": "Recent Activity",
+    "vsLastMonth": "vs last month"
+  },
+  "status": {
+    "approved": "Approved",
+    "rejected": "Rejected",
+    "pending": "Pending",
+    "underReview": "Under Review",
+    "waitingForReview": "Waiting for review",
+    "documentApproved": "Document approved",
+    "documentRejected": "Document rejected",
+    "fullyApproved": "Fully Approved",
+    "inReview": "In Review"
+  },
+  "documents": {
+    "documentLabel": "Document",
+    "recent": "Recent Documents",
+    "latestSubmissions": "Your latest document submissions",
+    "progress": "Document Progress",
+    "recentStatuses": "Recent documents and their approval status",
+    "view": "View Document",
+    "download": "Download Document",
+    "reviewProgress": "Review Progress",
+    "completed": "Completed",
+    "step1of3": "Step 1 of 3",
+    "noneYet": "No documents yet",
+    "startByUploading": "Start by uploading your first document",
+    "seeProgressHelp": "Upload some documents to see their progress here.",
+    "all": "All Documents",
+    "manageAll": "Manage and review all system documents",
+    "viewAndManage": "View and manage your uploaded documents",
+    "uploadSuccess": "Document uploaded successfully!",
+    "uploadFailed": "Failed to upload document",
+    "invalidType": "Please select a PDF, DOC, DOCX, or TXT file",
+    "fileTooLarge": "File size must be less than 10MB",
+    "provideTitleAndFile": "Please provide both a title and select a file",
+    "uploadSubtitle": "Submit a new document for review and approval",
+    "titleLabel": "Document Title *",
+    "titlePlaceholder": "Enter a descriptive title for your document",
+    "fileLabel": "Document File *",
+    "dropHere": "Drop your file here, or",
+    "browse": "browse",
+    "supportedTypes": "Supports PDF, DOC, DOCX, TXT files up to 10MB",
+    "reviewProcess": "Review Process",
+    "reviewProcessDesc": "Your document will go through a 3-stage approval process: Officer → Manager → Admin. You'll receive email notifications at each stage.",
+    "notFound": "No documents found",
+    "adjustSearch": "Try adjusting your search or filter criteria",
+    "uploadedBy": "Uploaded by",
+    "uploadedOn": "Uploaded",
+    "approvalProgress": "Approval Progress",
+    "rejectionReason": "Rejection Reason: ",
+    "detailsTitle": "Document Details",
+    "detailsSubtitle": "View document information and status",
+    "detailsComingSoon": "Document details implementation in progress...",
+    "viewDetails": "View Details"
+  },
+  "roles": {
+    "officerReview": "Officer Review",
+    "managerReview": "Manager Review",
+    "adminApproval": "Admin Approval",
+    "officer": "Officer",
+    "manager": "Manager",
+    "admin": "Admin"
+  },
+  "quick": {
+    "title": "Quick Actions",
+    "subtitle": "Common tasks and shortcuts",
+    "submitNew": "Submit a new document for review",
+    "viewAllDocs": "View all your documents",
+    "reviewWorkflows": "Review Workflows",
+    "reviewPending": "Review pending documents",
+    "manageUsers": "Manage Users",
+    "userMgmt": "User management and roles",
+    "viewAuditLogs": "View system activity logs",
+    "needHelp": "Need Help?",
+    "helpText": "Check out our documentation or contact support for assistance.",
+    "viewDocs": "View Documentation →"
+  },
+  "workflows": {
+    "title": "Document Workflows 📋",
+    "subtitle": "Review and manage document approval workflows",
+    "searchPlaceholder": "Search workflows...",
+    "showingXofY": "Showing",
+    "of": "of",
+    "workflows": "workflows",
+    "noneFound": "No workflows found",
+    "nonePending": "No pending workflows",
+    "allProcessed": "All workflows have been processed",
+    "reviewDocument": "Review Document",
+    "meetsRequirements": "Document meets requirements",
+    "needsRevision": "Document needs revision",
+    "reviewComment": "Review Comment",
+    "approvePlaceholder": "Add any additional notes (optional)...",
+    "rejectPlaceholder": "Please explain why this document is being rejected...",
+    "commentRequired": "A comment is required when rejecting a document",
+    "commentOptional": "Optional: Add any feedback or notes",
+    "pendingReviews": "pending reviews"
+  },
+  "users": {
+    "title": "User Management 👥",
+    "subtitle": "Manage users and their roles in the system"
+  },
+  "audit": {
+    "title": "Audit Logs 📊",
+    "subtitle": "Track system activities and user actions"
+  },
+  "profile": {
+    "manage": "Manage your account information and preferences",
+    "fullName": "Full Name",
+    "emailAddress": "Email Address",
+    "role": "Role"
+  }
+}
+

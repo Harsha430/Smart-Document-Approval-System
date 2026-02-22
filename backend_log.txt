@@ -1,0 +1,1593 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.fusesource.jansi.internal.JansiLoader in an unnamed module (file:/C:/Users/harsh/Downloads/apache-maven-3.9.9/lib/jansi-2.4.1.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:/C:/Users/harsh/Downloads/apache-maven-3.9.9/lib/guava-33.2.1-jre.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------< com.expensetracker:Smart-Document-Approval-System >----------
+[INFO] Building Smart Document Approval System 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.5.4:run (default-cli) > test-compile @ Smart-Document-Approval-System >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Smart-Document-Approval-System ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ Smart-Document-Approval-System ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 56 source files with javac [debug parameters release 17] to target\classes
+[INFO] /C:/Users/harsh/Desktop/Resume Projects/Document-Processing-Approval-Engine-main/src/main/java/com/expensetracker/smartdocumentapprovalsystem/config/SecurityConfig.java: C:\Users\harsh\Desktop\Resume Projects\Document-Processing-Approval-Engine-main\src\main\java\com\expensetracker\smartdocumentapprovalsystem\config\SecurityConfig.java uses or overrides a deprecated API.
+[INFO] /C:/Users/harsh/Desktop/Resume Projects/Document-Processing-Approval-Engine-main/src/main/java/com/expensetracker/smartdocumentapprovalsystem/config/SecurityConfig.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Smart-Document-Approval-System ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ Smart-Document-Approval-System ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 3 source files with javac [debug parameters release 17] to target\test-classes
+[INFO] 
+[INFO] <<< spring-boot:3.5.4:run (default-cli) < test-compile @ Smart-Document-Approval-System <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.5.4:run (default-cli) @ Smart-Document-Approval-System ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.4)
+
+2026-02-22T22:17:23.024+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] s.SmartDocumentApprovalSystemApplication : Starting SmartDocumentApprovalSystemApplication using Java 25.0.1 with PID 31892 (C:\Users\harsh\Desktop\Resume Projects\Document-Processing-Approval-Engine-main\target\classes started by harsh in C:\Users\harsh\Desktop\Resume Projects\Document-Processing-Approval-Engine-main)
+2026-02-22T22:17:23.024+05:30 DEBUG 31892 --- [Smart Document Approval System] [  restartedMain] s.SmartDocumentApprovalSystemApplication : Running with Spring Boot v3.5.4, Spring v6.2.9
+2026-02-22T22:17:23.026+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] s.SmartDocumentApprovalSystemApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-22T22:17:23.067+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-22T22:17:23.067+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-22T22:17:23.980+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-22T22:17:24.067+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 4 JPA repository interfaces.
+2026-02-22T22:17:24.999+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-22T22:17:25.050+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-22T22:17:25.051+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2026-02-22T22:17:25.240+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-22T22:17:25.244+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2175 ms
+2026-02-22T22:17:25.459+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-22T22:17:27.718+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@689fe47
+2026-02-22T22:17:27.720+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-22T22:17:27.905+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-22T22:17:27.968+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2026-02-22T22:17:28.043+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-22T22:17:28.679+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-22T22:17:29.069+05:30  WARN 31892 --- [Smart Document Approval System] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-22T22:17:29.526+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-22T22:17:31.429+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-22T22:17:34.089+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-22T22:17:34.808+05:30 DEBUG 31892 --- [Smart Document Approval System] [  restartedMain] c.e.s.config.JwtFilter                   : Filter 'jwtFilter' configured for use
+2026-02-22T22:17:35.106+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-22T22:17:35.106+05:30  WARN 31892 --- [Smart Document Approval System] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldOffset has been called by org.modelmapper.internal.typetools.TypeResolver (file:/C:/Users/harsh/.m2/repository/org/modelmapper/modelmapper/3.2.4/modelmapper-3.2.4.jar)
+WARNING: Please consider reporting this to the maintainers of class org.modelmapper.internal.typetools.TypeResolver
+WARNING: sun.misc.Unsafe::staticFieldOffset will be removed in a future release
+2026-02-22T22:17:35.646+05:30  WARN 31892 --- [Smart Document Approval System] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-22T22:17:36.414+05:30 DEBUG 31892 --- [Smart Document Approval System] [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-02-22T22:17:37.057+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-22T22:17:37.120+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-02-22T22:17:37.144+05:30  INFO 31892 --- [Smart Document Approval System] [  restartedMain] s.SmartDocumentApprovalSystemApplication : Started SmartDocumentApprovalSystemApplication in 14.473 seconds (process running for 15.442)
+Hibernate: 
+    select
+        count(*) 
+    from
+        users u1_0
+2026-02-22T22:20:06.702+05:30  INFO 31892 --- [Smart Document Approval System] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-22T22:20:06.702+05:30  INFO 31892 --- [Smart Document Approval System] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-22T22:20:06.705+05:30  INFO 31892 --- [Smart Document Approval System] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-02-22T22:20:06.734+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/workflows/pending
+2026-02-22T22:20:06.785+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/workflows/pending
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:20:07.346+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/workflows/pending
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        wf1_0.id,
+        wf1_0.comment,
+        wf1_0.document_id,
+        wf1_0.reviewed_at,
+        wf1_0.reviewer_id,
+        wf1_0.status 
+    from
+        work_flow wf1_0 
+    left join
+        users r1_0 
+            on r1_0.id=wf1_0.reviewer_id 
+    where
+        r1_0.id=? 
+        and wf1_0.status=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.comment,
+        d1_0.created_at,
+        d1_0.reviewed_at,
+        d1_0.status,
+        d1_0.title,
+        d1_0.upload_path,
+        d1_0.uploaded_by 
+    from
+        documents d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.comment,
+        d1_0.created_at,
+        d1_0.reviewed_at,
+        d1_0.status,
+        d1_0.title,
+        d1_0.upload_path,
+        d1_0.uploaded_by 
+    from
+        documents d1_0 
+    where
+        d1_0.id=?
+2026-02-22T22:20:12.393+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/documents/1/download
+2026-02-22T22:20:12.400+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/documents/1/download
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:20:12.703+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/documents/1/download
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.comment,
+        d1_0.created_at,
+        d1_0.reviewed_at,
+        d1_0.status,
+        d1_0.title,
+        d1_0.upload_path,
+        d1_0.uploaded_by 
+    from
+        documents d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+java.lang.IllegalArgumentException: Illegal character in path at index 83: https://ebbcfvlheajlzacroprm.supabase.co/storage/v1/object/public/documents/uploads\5a67eda7-286d-4f14-b8c8-46b896d24051.pdf
+	at java.base/java.net.URI.create(URI.java:936)
+	at com.expensetracker.smartdocumentapprovalsystem.controller.DocumentController.downloadDocument(DocumentController.java:122)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:724)
+	at com.expensetracker.smartdocumentapprovalsystem.controller.DocumentController$$SpringCGLIB$$0.downloadDocument(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.expensetracker.smartdocumentapprovalsystem.config.JwtFilter.doFilterInternal(JwtFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 83: https://ebbcfvlheajlzacroprm.supabase.co/storage/v1/object/public/documents/uploads\5a67eda7-286d-4f14-b8c8-46b896d24051.pdf
+	at java.base/java.net.URI$Parser.fail(URI.java:3003)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3174)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3256)
+	at java.base/java.net.URI$Parser.parse(URI.java:3204)
+	at java.base/java.net.URI.<init>(URI.java:649)
+	at java.base/java.net.URI.create(URI.java:934)
+	... 113 more
+2026-02-22T22:20:18.308+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/documents/2/download
+2026-02-22T22:20:18.326+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/documents/2/download
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:20:18.632+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/documents/2/download
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.comment,
+        d1_0.created_at,
+        d1_0.reviewed_at,
+        d1_0.status,
+        d1_0.title,
+        d1_0.upload_path,
+        d1_0.uploaded_by 
+    from
+        documents d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+java.lang.IllegalArgumentException: Illegal character in path at index 115: https://ebbcfvlheajlzacroprm.supabase.co/storage/v1/object/public/documents/cdb8deea-a8b6-49aa-9e5c-ecb0c93459ef_EF SET Certificate.pdf
+	at java.base/java.net.URI.create(URI.java:936)
+	at com.expensetracker.smartdocumentapprovalsystem.controller.DocumentController.downloadDocument(DocumentController.java:122)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:724)
+	at com.expensetracker.smartdocumentapprovalsystem.controller.DocumentController$$SpringCGLIB$$0.downloadDocument(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.expensetracker.smartdocumentapprovalsystem.config.JwtFilter.doFilterInternal(JwtFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 115: https://ebbcfvlheajlzacroprm.supabase.co/storage/v1/object/public/documents/cdb8deea-a8b6-49aa-9e5c-ecb0c93459ef_EF SET Certificate.pdf
+	at java.base/java.net.URI$Parser.fail(URI.java:3003)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3174)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3256)
+	at java.base/java.net.URI$Parser.parse(URI.java:3204)
+	at java.base/java.net.URI.<init>(URI.java:649)
+	at java.base/java.net.URI.create(URI.java:934)
+	... 113 more
+2026-02-22T22:20:51.703+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/auth/login
+2026-02-22T22:20:51.709+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/login
+2026-02-22T22:20:51.712+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-22T22:20:51.712+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/login
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:20:52.338+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-5] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    insert 
+    into
+        audit_logs
+        (action, details, entity_id, entity_type, ip_address, timestamp, user_email, user_name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-02-22T22:20:52.702+05:30  WARN 31892 --- [Smart Document Approval System] [nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23502
+2026-02-22T22:20:52.702+05:30 ERROR 31892 --- [Smart Document Approval System] [nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: null value in column "entity_id" of relation "audit_logs" violates not-null constraint
+  Detail: Failing row contains (8, USER_LOGIN, User logged in, null, User, null, 2026-02-22 22:20:52.506822, alice@documentapproval.com, Alice Smith).
+Failed to save audit log: could not execute statement [ERROR: null value in column "entity_id" of relation "audit_logs" violates not-null constraint
+  Detail: Failing row contains (8, USER_LOGIN, User logged in, null, User, null, 2026-02-22 22:20:52.506822, alice@documentapproval.com, Alice Smith).] [insert into audit_logs (action,details,entity_id,entity_type,ip_address,timestamp,user_email,user_name) values (?,?,?,?,?,?,?,?)]; SQL [insert into audit_logs (action,details,entity_id,entity_type,ip_address,timestamp,user_email,user_name) values (?,?,?,?,?,?,?,?)]; constraint [entity_id" of relation "audit_logs]
+2026-02-22T22:20:52.932+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/documents/my
+2026-02-22T22:20:52.937+05:30 DEBUG 31892 --- [Smart Document Approval System] [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/documents/my
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:20:53.097+05:30 DEBUG 31892 --- [Smart Document Approval System] [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/documents/my
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.comment,
+        d1_0.created_at,
+        d1_0.reviewed_at,
+        d1_0.status,
+        d1_0.title,
+        d1_0.upload_path,
+        d1_0.uploaded_by 
+    from
+        documents d1_0 
+    left join
+        users ub1_0 
+            on ub1_0.id=d1_0.uploaded_by 
+    where
+        ub1_0.id=?
+Hibernate: 
+    select
+        wf1_0.id,
+        wf1_0.comment,
+        wf1_0.document_id,
+        wf1_0.reviewed_at,
+        wf1_0.reviewer_id,
+        wf1_0.status 
+    from
+        work_flow wf1_0 
+    left join
+        documents d1_0 
+            on d1_0.id=wf1_0.document_id 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        wf1_0.id,
+        wf1_0.comment,
+        wf1_0.document_id,
+        wf1_0.reviewed_at,
+        wf1_0.reviewer_id,
+        wf1_0.status 
+    from
+        work_flow wf1_0 
+    left join
+        documents d1_0 
+            on d1_0.id=wf1_0.document_id 
+    where
+        d1_0.id=?
+2026-02-22T22:20:55.038+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/documents/my
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:20:55.342+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/documents/my
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.comment,
+        d1_0.created_at,
+        d1_0.reviewed_at,
+        d1_0.status,
+        d1_0.title,
+        d1_0.upload_path,
+        d1_0.uploaded_by 
+    from
+        documents d1_0 
+    left join
+        users ub1_0 
+            on ub1_0.id=d1_0.uploaded_by 
+    where
+        ub1_0.id=?
+Hibernate: 
+    select
+        wf1_0.id,
+        wf1_0.comment,
+        wf1_0.document_id,
+        wf1_0.reviewed_at,
+        wf1_0.reviewer_id,
+        wf1_0.status 
+    from
+        work_flow wf1_0 
+    left join
+        documents d1_0 
+            on d1_0.id=wf1_0.document_id 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        wf1_0.id,
+        wf1_0.comment,
+        wf1_0.document_id,
+        wf1_0.reviewed_at,
+        wf1_0.reviewer_id,
+        wf1_0.status 
+    from
+        work_flow wf1_0 
+    left join
+        documents d1_0 
+            on d1_0.id=wf1_0.document_id 
+    where
+        d1_0.id=?
+2026-02-22T22:21:00.902+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/documents/1
+2026-02-22T22:21:00.914+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing DELETE /api/documents/1
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:21:01.237+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured DELETE /api/documents/1
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.comment,
+        d1_0.created_at,
+        d1_0.reviewed_at,
+        d1_0.status,
+        d1_0.title,
+        d1_0.upload_path,
+        d1_0.uploaded_by 
+    from
+        documents d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        wf1_0.document_id,
+        wf1_0.id,
+        wf1_0.comment,
+        wf1_0.reviewed_at,
+        wf1_0.reviewer_id,
+        wf1_0.status 
+    from
+        work_flow wf1_0 
+    where
+        wf1_0.document_id=?
+Hibernate: 
+    delete 
+    from
+        work_flow 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        work_flow 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        work_flow 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        documents 
+    where
+        id=?
+2026-02-22T22:21:04.994+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/documents/my
+2026-02-22T22:21:05.008+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/documents/my
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:21:05.313+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/documents/my
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.comment,
+        d1_0.created_at,
+        d1_0.reviewed_at,
+        d1_0.status,
+        d1_0.title,
+        d1_0.upload_path,
+        d1_0.uploaded_by 
+    from
+        documents d1_0 
+    left join
+        users ub1_0 
+            on ub1_0.id=d1_0.uploaded_by 
+    where
+        ub1_0.id=?
+Hibernate: 
+    select
+        wf1_0.id,
+        wf1_0.comment,
+        wf1_0.document_id,
+        wf1_0.reviewed_at,
+        wf1_0.reviewer_id,
+        wf1_0.status 
+    from
+        work_flow wf1_0 
+    left join
+        documents d1_0 
+            on d1_0.id=wf1_0.document_id 
+    where
+        d1_0.id=?
+2026-02-22T22:21:08.408+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/documents/2
+2026-02-22T22:21:08.423+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing DELETE /api/documents/2
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:21:08.737+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured DELETE /api/documents/2
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.comment,
+        d1_0.created_at,
+        d1_0.reviewed_at,
+        d1_0.status,
+        d1_0.title,
+        d1_0.upload_path,
+        d1_0.uploaded_by 
+    from
+        documents d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        wf1_0.document_id,
+        wf1_0.id,
+        wf1_0.comment,
+        wf1_0.reviewed_at,
+        wf1_0.reviewer_id,
+        wf1_0.status 
+    from
+        work_flow wf1_0 
+    where
+        wf1_0.document_id=?
+Hibernate: 
+    delete 
+    from
+        work_flow 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        work_flow 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        work_flow 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        documents 
+    where
+        id=?
+2026-02-22T22:21:11.718+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/documents/my
+2026-02-22T22:21:11.725+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/documents/my
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:21:12.031+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/documents/my
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.comment,
+        d1_0.created_at,
+        d1_0.reviewed_at,
+        d1_0.status,
+        d1_0.title,
+        d1_0.upload_path,
+        d1_0.uploaded_by 
+    from
+        documents d1_0 
+    left join
+        users ub1_0 
+            on ub1_0.id=d1_0.uploaded_by 
+    where
+        ub1_0.id=?
+2026-02-22T22:21:13.068+05:30 DEBUG 31892 --- [Smart Document Approval System] [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/documents/my
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:21:13.361+05:30 DEBUG 31892 --- [Smart Document Approval System] [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/documents/my
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.comment,
+        d1_0.created_at,
+        d1_0.reviewed_at,
+        d1_0.status,
+        d1_0.title,
+        d1_0.upload_path,
+        d1_0.uploaded_by 
+    from
+        documents d1_0 
+    left join
+        users ub1_0 
+            on ub1_0.id=d1_0.uploaded_by 
+    where
+        ub1_0.id=?
+2026-02-22T22:21:23.022+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/documents/upload
+2026-02-22T22:21:23.039+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /api/documents/upload
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:21:23.342+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /api/documents/upload
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    insert 
+    into
+        documents
+        (comment, created_at, reviewed_at, status, title, upload_path, uploaded_by) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.role=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.role=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.role=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    insert 
+    into
+        work_flow
+        (comment, document_id, reviewed_at, reviewer_id, status) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        work_flow
+        (comment, document_id, reviewed_at, reviewer_id, status) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        work_flow
+        (comment, document_id, reviewed_at, reviewer_id, status) 
+    values
+        (?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        audit_logs
+        (action, details, entity_id, entity_type, ip_address, timestamp, user_email, user_name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.role=? 
+    fetch
+        first ? rows only
+Failed to send email: Authentication failed
+2026-02-22T22:21:29.130+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/documents/my
+2026-02-22T22:21:29.136+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/documents/my
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:21:29.292+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/documents/my
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.comment,
+        d1_0.created_at,
+        d1_0.reviewed_at,
+        d1_0.status,
+        d1_0.title,
+        d1_0.upload_path,
+        d1_0.uploaded_by 
+    from
+        documents d1_0 
+    left join
+        users ub1_0 
+            on ub1_0.id=d1_0.uploaded_by 
+    where
+        ub1_0.id=?
+Hibernate: 
+    select
+        wf1_0.id,
+        wf1_0.comment,
+        wf1_0.document_id,
+        wf1_0.reviewed_at,
+        wf1_0.reviewer_id,
+        wf1_0.status 
+    from
+        work_flow wf1_0 
+    left join
+        documents d1_0 
+            on d1_0.id=wf1_0.document_id 
+    where
+        d1_0.id=?
+2026-02-22T22:22:07.131+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/auth/login
+2026-02-22T22:22:07.139+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /api/auth/login
+2026-02-22T22:22:07.140+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-22T22:22:07.141+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured POST /api/auth/login
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:22:07.611+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-6] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    insert 
+    into
+        audit_logs
+        (action, details, entity_id, entity_type, ip_address, timestamp, user_email, user_name) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-02-22T22:22:07.926+05:30  WARN 31892 --- [Smart Document Approval System] [nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 23502
+2026-02-22T22:22:07.926+05:30 ERROR 31892 --- [Smart Document Approval System] [nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: null value in column "entity_id" of relation "audit_logs" violates not-null constraint
+  Detail: Failing row contains (10, USER_LOGIN, User logged in, null, User, null, 2026-02-22 22:22:07.778856, admin@documentapproval.com, System Admin).
+Failed to save audit log: could not execute statement [ERROR: null value in column "entity_id" of relation "audit_logs" violates not-null constraint
+  Detail: Failing row contains (10, USER_LOGIN, User logged in, null, User, null, 2026-02-22 22:22:07.778856, admin@documentapproval.com, System Admin).] [insert into audit_logs (action,details,entity_id,entity_type,ip_address,timestamp,user_email,user_name) values (?,?,?,?,?,?,?,?)]; SQL [insert into audit_logs (action,details,entity_id,entity_type,ip_address,timestamp,user_email,user_name) values (?,?,?,?,?,?,?,?)]; constraint [entity_id" of relation "audit_logs]
+2026-02-22T22:22:08.153+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/documents/my
+2026-02-22T22:22:08.154+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/workflows/pending
+2026-02-22T22:22:08.158+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/documents/my
+2026-02-22T22:22:08.159+05:30 DEBUG 31892 --- [Smart Document Approval System] [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/workflows/pending
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:22:08.314+05:30 DEBUG 31892 --- [Smart Document Approval System] [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/workflows/pending
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:22:08.461+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/documents/my
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        wf1_0.id,
+        wf1_0.comment,
+        wf1_0.document_id,
+        wf1_0.reviewed_at,
+        wf1_0.reviewer_id,
+        wf1_0.status 
+    from
+        work_flow wf1_0 
+    left join
+        users r1_0 
+            on r1_0.id=wf1_0.reviewer_id 
+    where
+        r1_0.id=? 
+        and wf1_0.status=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.comment,
+        d1_0.created_at,
+        d1_0.reviewed_at,
+        d1_0.status,
+        d1_0.title,
+        d1_0.upload_path,
+        d1_0.uploaded_by 
+    from
+        documents d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.comment,
+        d1_0.created_at,
+        d1_0.reviewed_at,
+        d1_0.status,
+        d1_0.title,
+        d1_0.upload_path,
+        d1_0.uploaded_by 
+    from
+        documents d1_0 
+    left join
+        users ub1_0 
+            on ub1_0.id=d1_0.uploaded_by 
+    where
+        ub1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2026-02-22T22:22:11.573+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/workflows/pending
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:22:11.882+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/workflows/pending
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        wf1_0.id,
+        wf1_0.comment,
+        wf1_0.document_id,
+        wf1_0.reviewed_at,
+        wf1_0.reviewer_id,
+        wf1_0.status 
+    from
+        work_flow wf1_0 
+    left join
+        users r1_0 
+            on r1_0.id=wf1_0.reviewer_id 
+    where
+        r1_0.id=? 
+        and wf1_0.status=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.comment,
+        d1_0.created_at,
+        d1_0.reviewed_at,
+        d1_0.status,
+        d1_0.title,
+        d1_0.upload_path,
+        d1_0.uploaded_by 
+    from
+        documents d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2026-02-22T22:22:28.068+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/documents/3/download
+2026-02-22T22:22:28.072+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/documents/3/download
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:22:28.361+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/documents/3/download
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.comment,
+        d1_0.created_at,
+        d1_0.reviewed_at,
+        d1_0.status,
+        d1_0.title,
+        d1_0.upload_path,
+        d1_0.uploaded_by 
+    from
+        documents d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:22:39.242+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/documents/3/download
+2026-02-22T22:22:39.249+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/documents/3/download
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:22:39.545+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/documents/3/download
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.comment,
+        d1_0.created_at,
+        d1_0.reviewed_at,
+        d1_0.status,
+        d1_0.title,
+        d1_0.upload_path,
+        d1_0.uploaded_by 
+    from
+        documents d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:22:47.751+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/documents/3/download
+2026-02-22T22:22:47.757+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/documents/3/download
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:22:48.069+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/documents/3/download
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.comment,
+        d1_0.created_at,
+        d1_0.reviewed_at,
+        d1_0.status,
+        d1_0.title,
+        d1_0.upload_path,
+        d1_0.uploaded_by 
+    from
+        documents d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:27:38.340+05:30 DEBUG 31892 --- [Smart Document Approval System] [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/workflows/pending
+2026-02-22T22:27:38.355+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/workflows/pending
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:27:38.670+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/workflows/pending
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        wf1_0.id,
+        wf1_0.comment,
+        wf1_0.document_id,
+        wf1_0.reviewed_at,
+        wf1_0.reviewer_id,
+        wf1_0.status 
+    from
+        work_flow wf1_0 
+    left join
+        users r1_0 
+            on r1_0.id=wf1_0.reviewer_id 
+    where
+        r1_0.id=? 
+        and wf1_0.status=?
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.comment,
+        d1_0.created_at,
+        d1_0.reviewed_at,
+        d1_0.status,
+        d1_0.title,
+        d1_0.upload_path,
+        d1_0.uploaded_by 
+    from
+        documents d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2026-02-22T22:27:41.283+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/documents/3/download
+2026-02-22T22:27:41.291+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /api/documents/3/download
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:27:41.592+05:30 DEBUG 31892 --- [Smart Document Approval System] [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /api/documents/3/download
+Hibernate: 
+    select
+        d1_0.id,
+        d1_0.comment,
+        d1_0.created_at,
+        d1_0.reviewed_at,
+        d1_0.status,
+        d1_0.title,
+        d1_0.upload_path,
+        d1_0.uploaded_by 
+    from
+        documents d1_0 
+    where
+        d1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-22T22:28:46.232+05:30  INFO 31892 --- [Smart Document Approval System] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-22T22:28:46.246+05:30  INFO 31892 --- [Smart Document Approval System] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-02-22T22:28:46.256+05:30  INFO 31892 --- [Smart Document Approval System] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-22T22:28:46.269+05:30  INFO 31892 --- [Smart Document Approval System] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-22T22:28:46.559+05:30  INFO 31892 --- [Smart Document Approval System] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11:40 min
+[INFO] Finished at: 2026-02-22T22:28:46+05:30
+[INFO] ------------------------------------------------------------------------
+Terminate batch job (Y/N)? 
+^C
